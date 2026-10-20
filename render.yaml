@@ -1,0 +1,7 @@
+# Optional "Blueprint" for Render. You can also create the service by hand in the dashboard (see DEPLOY.md).
+services:
+  - type: web
+    name: mini-ats
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
